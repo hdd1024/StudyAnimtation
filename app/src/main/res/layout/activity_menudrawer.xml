@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuDrawerLaActivity">
+
+    <com.example.studyanimtation.view.menu.MenuDrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/dbg" />
+
+        <com.example.studyanimtation.view.menu.MenuContentLayout
+            android:id="@+id/mcl_menu_content"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            app:maxTranslationX="60dp">
+
+            <TextView
+                style="@style/MenuText"
+                android:layout_marginTop="50dp"
+                android:drawableLeft="@drawable/circle"
+                android:text="朋友圈" />
+
+            <TextView
+                android:id="@+id/tv_wallet"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/wallet"
+                android:text="钱包" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:text="优惠券" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:text="优惠券" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:text="优惠券" />
+        </com.example.studyanimtation.view.menu.MenuContentLayout>
+    </com.example.studyanimtation.view.menu.MenuDrawerLayout>
+
+</RelativeLayout>

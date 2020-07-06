@@ -16,5 +16,6 @@ class DrawPaintActivity : AppCompatActivity() {
             Log.d(TAG, "点击撤销画笔了")
             dpw_draw.drawRestore()
         }
+
     }
 }
